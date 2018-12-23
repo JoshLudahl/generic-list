@@ -1,0 +1,201 @@
+/*
+COLORS:
+CHARCOAL: #313943
+WHITE: #FFF
+GREY: #BBC8D8
+TEAL: #1FCFCB
+http://typespiration.com/design/the-signal/
+*/
+
+body {
+    background-color: #313943;
+    color: #fff;
+}
+
+.lists {
+    color: #1fcfcb;
+    padding-top: .25em;
+    font-size: 1.5em;
+
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Cormorant Infant';
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 72px;
+	letter-spacing: -1px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.gap {
+    padding: .50em;
+}
+h1:after {
+	color: #1fcfcb;
+	display: block;
+	content: '. . .';
+	font-size: 26px;
+	line-height: 24px;
+	height: 24px;
+	margin: 48px auto;
+}
+
+p {
+	color: #bbc8d8;
+	font-family: 'Lato';
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 36px;
+	margin-bottom: 36px;
+	text-align: center;
+}
+
+a {
+	color: #1fcfcb;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/*
+https://codepen.io/georgehastings/pen/nlGge
+*/
+
+.delete-button {
+    display: inline-block;
+
+    height: 55px;
+    width: 100px;
+    line-height: 55px;
+    border: 2px solid #cdcdcd;
+    border-radius: 3px;
+    font-weight: 400;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(.63,1.75,.22,.57);
+    overflow:hidden;
+    transform: translate3d(0,0,0);
+
+    &:hover {
+      border: 2px solid #e03e28;
+      color: #e03e28;
+    }
+
+    &.activate {
+      border: 2px solid #e03e28 !important;
+      box-shadow: inset 0px 55px 0px 0px #e03e28;
+      color: #fff;
+
+      .confirm,
+      .button-face {
+        transform: translate3d(0,0px,0);
+      }
+    }
+  }
+
+  .confirm {
+    height: inherit;
+    width: inherit;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .confirm,
+  .button-face {
+    transform: translate3d(0,-55px,0);
+    transition: -webkit-transform 0.2s cubic-bezier(.63,1.75,.22,.57);
+  }
+
+  .button-face {
+
+  }
+
+  .yes {
+    float: left;
+  }
+
+  .no {
+    float: right;
+  }
+/*
+https://codepen.io/andreasstorm/pen/gKGbxo
+*/
+body {
+  display: grid;
+  font-family: Avenir;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+.item {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.item .label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 1.5em;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.item .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.item input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #1FCFCB;
+  transition: all 0.15s ease;
+}
+.item input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.item input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-26px) scale(0.75);
+}
+.item input:focus {
+  background: none;
+  outline: none;
+}
+.item input:focus + span {
+  color: #fff;
+  transform: translateY(-26px) scale(0.75);
+}
+.item input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+
+.footsies {
+    margin: 3em;
+    color: #bbc8d8;
+    font-size: .75em;
+}
