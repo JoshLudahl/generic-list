@@ -40,7 +40,7 @@ new Vue({
             this.itemx = '';
             if (todo) {
 
-                addItems(todo).then(function (item) {
+                addItems(todo.toUpperCase()).then(function (item) {
                     console.log('Added Item: ' + item.item);
                     note.push(item);
                 });
