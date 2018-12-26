@@ -29,6 +29,7 @@ router.post('/:item', async (req, res, next) => {
     }
 
 });
+
 //  Remove item from list
 router.delete('/:id', async (req, res, next) => {
     try {
@@ -40,7 +41,5 @@ router.delete('/:id', async (req, res, next) => {
         return error;
     }
 });
-
-
 
 module.exports = router;

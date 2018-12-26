@@ -2,12 +2,7 @@
 const fs = require('fs');
 const http = require('http');
 
-
-
-
-
 //Create the server
-
 var server = http.createServer(require('./app'));
 
 const host = 'localhost';

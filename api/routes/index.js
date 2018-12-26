@@ -9,9 +9,4 @@ router.get('/about', (req, res, next) => {
     res.render('index', {page: 'about'});
 });
 
-
-
-
-
-
 module.exports = router;
