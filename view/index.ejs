@@ -1,67 +1,114 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Josh Ludahl">
 
-  <title>Generic List // Grocery // ToDo // Goals // Whatever</title>
+  <title>Bulga.io - Hi.</title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <!-- Load Factory CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.0/css/bulma.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
-  <!-- Vue Core JS -->
-  <!-- development version, includes helpful console warnings -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <!-- Custom styles for this template -->
-  <link href="/static/form_styles.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/static/styles.css">
+
 </head>
+
 <body>
-<script src="/static/requests.js"></script>
 
-<div id="haha"></div>
 
-<div class="container">
-  <h1>This Generic List</h1>
-
-    <div id="app3">
-        <div class="row">
-            <div class="col text-center gap">
-
-                <label for="item" class="item">
-                    <input @keyup.enter="addItem(itemx)" name="item" v-model="itemx" type="text" id="item" placeholder=" ">
-                    <span class="label">Enter Item:</span>
-                    <span class="border"></span>
-                  </label>
-
-              </div>
+  <!-- Inspired from https://codepen.io/ohlaph/pen/mobRbP -->
+  <section class="hero is-dark is-fullheight">
+    <div class="hero-body">
+      <div class="container animated fadeInUp">
+        <div class="columns is-multiline is-mobile">
+          <div id="organize" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>organize</li>
+              <li><a target="_blank" href="https://mail.google.com">gmail</a></li>
+              <li><a target="_blank" href="https://drive.google.com">drive</a></li>
+              <li><a target="_blank" href="https://trello.com">trello</a></li>
+              <li><a target="_blank" href="https://webflow.com">webflow</a></li>
+              <li><a target="_blank" href="//flowmapp.com">flowmapp</a></li>
+            </ul>
           </div>
-
-      <div class="row" v-for="item in note">
-          <div class="col text-right">
-              <div class="delete-button">
-                  <div class="confirm">Confirm Delete</div>
-                  <div class="button-face text-center" v-on:click="deleteItem(item._id)">Delete</div>
-                </div>
+          <div id="social" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>social</li>
+              <li><a target="_blank" href="//twitter.com">twitter</a></li>
+              <li><a target="_blank" href="//telegram.org">telegram</a></li>
+              <li><a target="_blank" href="//discord.com">discord</a></li>
+              <li><a target="_blank" href="//reddit.com">reddit</a></li>
+            </ul>
           </div>
-          <div class="col lists">
-              {{ item.item }}
+          <div id="media" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>media</li>
+              <li><a target="_blank" href="https://youtube.com">youtube</a></li>
+              <li><a target="_blank" href="http://www.soundcloud.com/">soundcloud</a></li>
+              <li><a target="_blank" href="https://spotify.com">spotify</a></li>
+              <li><a target="_blank" href="http://musicforprogramming.net/?one">programming music</a></li>
+              <li><a target="_blank" href="http://datassette.net/">datassette</a></li>
+            </ul>
+          </div>
+          <div id="dev" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>dev</li>
+              <li><a target="_blank" href="https://gitlab.com/">gitlab</a></li>
+              <li><a target="_blank" href="https://github.com/joshludahl">github</a></li>
+              <li><a target="_blank" href="https://www.codepen.io/ohlaph/">codepen.io</a></li>
+              <li><a target="_blank" href="//jsfiddle.net">jsfiddle</a></li>
+            </ul>
+          </div>
+          <div id="docs" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>dev tools</li>
+              <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">javascript</a></li>
+              <li><a target="_blank" href="https://devdocs.io/">dev docs</a></li>
+              <li><a target="_blank" href="https://developer.mozilla.org/en-US/">mdn</a></li>
+            </ul>
+          </div>
+          <div id="utils" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>utils</li>
+              <li><a href="https://unsplash.com/">unsplash</a></li>
+              <li><a href="https://pexels.com/">pexels</a></li>
+              <li><a href="https://imgur.com/">imgur</a></li>
+              <li><a href="https://www.photopea.com/">photopea</a></li>
+            </ul>
+          </div>
+          <div id="web" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>front end</li>
+              <li><a target="_blank" href="//vuejs.org">vuejs</a></li>
+              <li><a target="_blank" href="//bulma.io">bulma</a></li>
+              <li><a target="_blank" href="//fontawesome.io/">fontawesome</a></li>
+              <li><a target="_blank" href="https://htmlreference.io/">htmlreference.io</a></li>
+              <li><a target="_blank" href="https://cssreference.io/">cssreference.io</a></li>
+            </ul>
+          </div>
+          <div id="server" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>server</li>
+              <li><a target="_blank" href="https://nodejs.org/">node</a></li>
+              <li><a target="_blank" href="https://npmjs.com/">npm</a></li>
+              <li><a target="_blank" href="http://expressjs.com/">express</a></li>
+              <li><a target="_blank" href="https://mongoosejs.com/">mongoose</a></li>
+              <li><a target="_blank" href="//mlab.com">mLab</a></li>
+            </ul>
           </div>
         </div>
-    </div>
-    <div class="footsies">
-        Bringing the rain since<br>
-        (1999)
       </div>
-</div>
+    </div>
+  </section>
 
-    <script src="/static/vueapp.js"></script>
 
-</div>
 </body>
 
 </html>

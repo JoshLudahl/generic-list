@@ -9,4 +9,8 @@ router.get('/about', (req, res, next) => {
     res.render('index', {page: 'about'});
 });
 
+router.get('/li', (req, res, next) => {
+    res.render('list', {page: 'home'});
+});
+
 module.exports = router;

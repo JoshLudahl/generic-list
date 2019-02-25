@@ -109,9 +109,7 @@ https://codepen.io/georgehastings/pen/nlGge
     transition: -webkit-transform 0.2s cubic-bezier(.63,1.75,.22,.57);
   }
 
-  .button-face {
 
-  }
 
   .yes {
     float: left;
@@ -198,4 +196,23 @@ body {
     margin: 3em;
     color: #bbc8d8;
     font-size: .75em;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  h1 {
+   font-size: 2rem;
+  }
+  .gap {
+    padding: 5px;
+  }
+  h1:after {
+    color: #1fcfcb;
+    display: block;
+    content: '. . .';
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+    margin: 10px auto;
+  }
 }

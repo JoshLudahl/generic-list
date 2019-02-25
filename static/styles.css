@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Inconsolata;
+    src: url(Inconsolata-Regular.ttf);
+  }
+
+  .body {
+    height: 100%;
+  }
+
+  * {
+    border-radius: 0 !important;
+  }
+
+  .container {
+    background-color: #1D1F21;
+    border-style: solid;
+    border-width: 25px 5px 5px 5px;
+    border-color: #82BBC2;
+    width: 952px;
+    padding: 25px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 13px;
+  }
+
+  .hero.is-dark {
+    background-color: #1D1F21
+  }
+
+  li a {
+    color: #c5c8c6;
+  }
+
+  li a:hover,
+  li a:visited,
+  li a:active {
+    text-decoration: none;
+    transition: .1s;
+  }
+
+  #organize {
+    color: #2ecc71;
+  }
+
+  #organize ul li a {
+    color: #c5c8c6;
+  }
+
+  #organize ul li a:hover {
+    color: #2ecc71;
+  }
+
+  #social {
+    color: #3498db;
+  }
+
+  #social ul li a {
+    color: #c5c8c6;
+  }
+
+  #social ul li a:hover {
+    color: #3498db;
+  }
+
+  #media {
+    color: #9b59b6;
+  }
+
+  #media ul li a {
+    color: #c5c8c6;
+  }
+
+  #media ul li a:hover {
+    color: #9b59b6;
+  }
+
+  #dev {
+    color: #f1c40f;
+  }
+
+  #dev ul li a {
+    color: #c5c8c6;
+  }
+
+  #dev ul li a:hover {
+    color: #f1c40f;
+  }
+
+  #docs {
+    color: #e67e22;
+  }
+
+  #docs ul li a {
+    color: #c5c8c6;
+  }
+
+  #docs ul li a:hover {
+    color: #e67e22;
+  }
+
+  #utils {
+    color: #1abc9c;
+  }
+
+  #utils ul li a {
+    color: #c5c8c6;
+  }
+
+  #utils ul li a:hover {
+    color: #1abc9c;
+  }
+
+  #web {
+    color: #d35400;
+  }
+
+  #web ul li a {
+    color: #c5c8c6;
+  }
+
+  #web ul li a:hover {
+    color: #d35400;
+  }
+
+  #server {
+    color: #0078D7;
+  }
+
+  #server ul li a {
+    color: #c5c8c6;
+  }
+
+  #server ul li a:hover {
+    color: #0078D7;
+  }
+
+  @media (min-width: 544px) {
+    .container {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      font-size: 16px;
+    }
+  }
+
+  .form-control {
+    background-color: #1D1F21;
+    display: none;
+    padding: 0px;
+    border: none;
+    color: #c5c8c6;
+  }
+
+  input[type="search-input"]:focus {
+    background-color: #1D1F21;
+    color: #c5c8c6;
+  }
+
+  input[type="search-input"]:hover {
+    background-color: #222426;
+    color: #c5c8c6;
+  }
+
+  #searchform {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  form {
+    display: inline-block;
+    width: 90%;
+  }
+
+  label {
+    color: #CC6666;
+    display: inline-block;
+    float: left;
+    padding-right: 1em;
+  }

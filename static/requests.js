@@ -33,7 +33,12 @@ const removeItem = (item) => {
 function addItems(item) {
     try {
         const data = fetch('/list/' + item, {
-            method: 'POST'
+            method: 'POST',
+            mode: "cors",
+            credentials: "omit",
+            headers: {
+                'Content-Type': 'application/json'
+            }
         }).then(function (newItem) {
 
             return newItem.json();
