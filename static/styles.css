@@ -2,6 +2,7 @@
     font-family: Inconsolata;
     src: url(Inconsolata-Regular.ttf);
   }
+  @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web');
 
   .body {
     height: 100%;
@@ -12,22 +13,24 @@
   }
 
   .container {
-    background-color: #1D1F21;
+    background-color: #333333;
     border-style: solid;
     border-width: 25px 5px 5px 5px;
-    border-color: #82BBC2;
+    border-color: #319BDB;
     width: 952px;
     padding: 25px;
     font-family: 'Inconsolata', monospace;
     font-size: 13px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, .3);
   }
 
   .hero.is-dark {
-    background-color: #1D1F21
+    background-color: #333333;
+
   }
 
   li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   li a:hover,
@@ -42,7 +45,7 @@
   }
 
   #organize ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #organize ul li a:hover {
@@ -54,7 +57,7 @@
   }
 
   #social ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #social ul li a:hover {
@@ -66,7 +69,7 @@
   }
 
   #media ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #media ul li a:hover {
@@ -78,7 +81,7 @@
   }
 
   #dev ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #dev ul li a:hover {
@@ -90,7 +93,7 @@
   }
 
   #docs ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #docs ul li a:hover {
@@ -102,7 +105,7 @@
   }
 
   #utils ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #utils ul li a:hover {
@@ -114,7 +117,7 @@
   }
 
   #web ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #web ul li a:hover {
@@ -126,7 +129,7 @@
   }
 
   #server ul li a {
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #server ul li a:hover {
@@ -156,17 +159,17 @@
     display: none;
     padding: 0px;
     border: none;
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   input[type="search-input"]:focus {
     background-color: #1D1F21;
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   input[type="search-input"]:hover {
     background-color: #222426;
-    color: #c5c8c6;
+    color: #EDF0F1;
   }
 
   #searchform {
@@ -186,3 +189,37 @@
     float: left;
     padding-right: 1em;
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .flash {
+    color: #EDF0F1;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2em;
+    letter-spacing: 1px;
+    background: #319BDB;
+    width: 220px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 20px;
+    left: -60px;
+    text-align: center;
+    line-height: 65px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, .3);
+  }
+
+  /* At the top level of your code */
+@media screen and (max-width: 750px) {
+  .flash {
+    visibility: hidden;
+  }
+}
+@media screen and (max-height: 600px) {
+  .flash {
+    visibility: hidden;
+  }
+}
