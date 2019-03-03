@@ -1,272 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="Josh Ludahl" />
 
-    <title>Bulga.io - Hi.</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="Josh Ludahl" />
 
-    <!-- Load Factory CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.0/css/bulma.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-    />
+  <title>Bulga.io - Hi.</title>
+
+  <!-- Load Factory CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.0/css/bulma.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="/static/styles.css" />
-  </head>
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
 
-  <body>
-    <div id="search">
-      <input
-        id="search-field"
-        type="text"
-        name="search-field"
-        onkeypress="return search(event)"
-      />
-    </div>
+<body>
+  <div id="search">
+    <input id="search-field" type="text" name="search-field" onkeypress="return search(event)" />
+  </div>
 
-    <div class="flash">Bulga</div>
-    <!-- Inspired from https://codepen.io/ohlaph/pen/mobRbP -->
-    <section class="hero is-dark is-fullheight">
-      <div class="hero-body">
-        <div class="container animated fadeInUp">
-          <div class="columns is-full">
-            <div class="column is-full has-text-centered">
-              <div class="welcome">Welcome, Sexy</div>
-              <div class="weather-container">
-                <div class="row">
-                  <div id="weather-description" class="inline"></div>
-                  <div class="inline">-</div>
-                  <div id="temp" class="inline"></div>
-                </div>
+  <div class="flash">Bulga</div>
+  <!-- Inspired from https://codepen.io/ohlaph/pen/mobRbP -->
+  <section class="hero is-dark is-fullheight">
+    <div class="hero-body">
+      <div class="container animated fadeInUp">
+        <div class="columns is-full">
+          <div class="column is-full has-text-centered">
+            <div class="welcome">Welcome, Sexy</div>
+            <div class="weather-container">
+              <div class="row">
+                <div id="weather-description" class="inline"></div>
+                <div class="inline">-</div>
+                <div id="temp" class="inline"></div>
               </div>
             </div>
           </div>
-          <div class="columns is-multiline is-mobile">
-            <div
-              id="organize"
-              class="column is-3-desktop is-3-tablet is-6-mobile"
-            >
-              <ul class="list-unstyled">
-                <li>organize</li>
-                <li>
-                  <a target="_blank" href="https://mail.google.com">gmail</a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://drive.google.com">drive</a>
-                </li>
-                <li><a target="_blank" href="https://trello.com">trello</a></li>
-                <li>
-                  <a target="_blank" href="https://webflow.com">webflow</a>
-                </li>
-                <li><a target="_blank" href="//flowmapp.com">flowmapp</a></li>
-                <li><a target="_blank" href="https://grapesjs.com/demo.html">grapesjs</a></li>
-              </ul>
-            </div>
-            <div
-              id="social"
-              class="column is-3-desktop is-3-tablet is-6-mobile"
-            >
-              <ul class="list-unstyled">
-                <li>social</li>
-                <li><a target="_blank" href="//twitter.com">twitter</a></li>
-                <li><a target="_blank" href="//telegram.org">telegram</a></li>
-                <li><a target="_blank" href="//discord.com">discord</a></li>
-                <li><a target="_blank" href="//reddit.com">reddit</a></li>
-              </ul>
-            </div>
-            <div id="media" class="column is-3-desktop is-3-tablet is-6-mobile">
-              <ul class="list-unstyled">
-                <li>media</li>
-                <li>
-                  <a target="_blank" href="https://youtube.com">youtube</a>
-                </li>
-                <li>
-                  <a target="_blank" href="http://www.soundcloud.com/"
-                    >soundcloud</a
-                  >
-                </li>
-                <li>
-                  <a target="_blank" href="https://spotify.com">spotify</a>
-                </li>
-                <li>
-                  <a target="_blank" href="http://musicforprogramming.net/?one"
-                    >programming music</a
-                  >
-                </li>
-                <li>
-                  <a target="_blank" href="http://datassette.net/"
-                    >datassette</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div id="dev" class="column is-3-desktop is-3-tablet is-6-mobile">
-              <ul class="list-unstyled">
-                <li>dev</li>
-                <li>
-                  <a target="_blank" href="https://gitlab.com/">gitlab</a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://github.com/joshludahl"
-                    >github</a
-                  >
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.codepen.io/ohlaph/"
-                    >codepen.io</a
-                  >
-                </li>
-                <li><a target="_blank" href="//jsfiddle.net">jsfiddle</a></li>
-              </ul>
-            </div>
-            <div id="docs" class="column is-3-desktop is-3-tablet is-6-mobile">
-              <ul class="list-unstyled">
-                <li>dev tools</li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
-                    >javascript</a
-                  >
-                </li>
-                <li>
-                  <a target="_blank" href="http://javascript.info/"
-                    >javascript.info</a
-                  >
-                </li>
-                <li>
-                  <a target="_blank" href="https://devdocs.io/">dev docs</a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://developer.mozilla.org/en-US/"
-                    >mdn</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div id="utils" class="column is-3-desktop is-3-tablet is-6-mobile">
-              <ul class="list-unstyled">
-                <li>utils</li>
-                <li>
-                  <a target="_blank" href="https://unsplash.com/">unsplash</a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://pexels.com/">pexels</a>
-                </li>
-                <li><a target="_blank" href="https://imgur.com/">imgur</a></li>
-                <li>
-                  <a target="_blank" href="https://www.photopea.com/"
-                    >photopea</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div id="web" class="column is-3-desktop is-3-tablet is-6-mobile">
-              <ul class="list-unstyled">
-                <li>front end</li>
-                <li><a target="_blank" href="//vuejs.org">vuejs</a></li>
-                <li><a target="_blank" href="//bulma.io">bulma</a></li>
-                <li>
-                  <a target="_blank" href="//fontawesome.io/">fontawesome</a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://htmlreference.io/"
-                    >htmlreference.io</a
-                  >
-                </li>
-                <li>
-                  <a target="_blank" href="https://cssreference.io/"
-                    >cssreference.io</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div
-              id="server"
-              class="column is-3-desktop is-3-tablet is-6-mobile"
-            >
-              <ul class="list-unstyled">
-                <li>server</li>
-                <li><a target="_blank" href="https://nodejs.org/">node</a></li>
-                <li><a target="_blank" href="https://npmjs.com/">npm</a></li>
-                <li>
-                  <a target="_blank" href="http://expressjs.com/">express</a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://mongoosejs.com/">mongoose</a>
-                </li>
-                <li><a target="_blank" href="//mlab.com">mLab</a></li>
-              </ul>
-            </div>
+        </div>
+        <div class="columns is-multiline is-mobile">
+          <div id="organize" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>organize</li>
+              <li>
+                <a target="_blank" href="https://mail.google.com">gmail</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://drive.google.com">drive</a>
+              </li>
+              <li><a target="_blank" href="https://trello.com">trello</a></li>
+              <li>
+                <a target="_blank" href="https://webflow.com">webflow</a>
+              </li>
+              <li><a target="_blank" href="//flowmapp.com">flowmapp</a></li>
+              <li><a target="_blank" href="https://grapesjs.com/demo.html">grapesjs</a></li>
+            </ul>
+          </div>
+          <div id="social" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>social</li>
+              <li><a target="_blank" href="//twitter.com">twitter</a></li>
+              <li><a target="_blank" href="//telegram.org">telegram</a></li>
+              <li><a target="_blank" href="//discord.com">discord</a></li>
+              <li><a target="_blank" href="//reddit.com">reddit</a></li>
+            </ul>
+          </div>
+          <div id="media" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>media</li>
+              <li>
+                <a target="_blank" href="https://youtube.com">youtube</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://www.soundcloud.com/">soundcloud</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://spotify.com">spotify</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://musicforprogramming.net/?one">programming music</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://datassette.net/">datassette</a>
+              </li>
+            </ul>
+          </div>
+          <div id="dev" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>dev</li>
+              <li>
+                <a target="_blank" href="https://gitlab.com/">gitlab</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/joshludahl">github</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.codepen.io/ohlaph/">codepen.io</a>
+              </li>
+              <li><a target="_blank" href="//jsfiddle.net">jsfiddle</a></li>
+            </ul>
+          </div>
+          <div id="docs" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>dev tools</li>
+              <li>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">javascript</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://javascript.info/">javascript.info</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://devdocs.io/">dev docs</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/">mdn</a>
+              </li>
+            </ul>
+          </div>
+          <div id="utils" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>utils</li>
+              <li>
+                <a target="_blank" href="https://unsplash.com/">unsplash</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://pexels.com/">pexels</a>
+              </li>
+              <li><a target="_blank" href="https://imgur.com/">imgur</a></li>
+              <li>
+                <a target="_blank" href="https://www.photopea.com/">photopea</a>
+              </li>
+            </ul>
+          </div>
+          <div id="web" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>front end</li>
+              <li><a target="_blank" href="//vuejs.org">vuejs</a></li>
+              <li><a target="_blank" href="//bulma.io">bulma</a></li>
+              <li>
+                <a target="_blank" href="//fontawesome.io/">fontawesome</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://htmlreference.io/">htmlreference.io</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://cssreference.io/">cssreference.io</a>
+              </li>
+            </ul>
+          </div>
+          <div id="server" class="column is-3-desktop is-3-tablet is-6-mobile">
+            <ul class="list-unstyled">
+              <li>server</li>
+              <li><a target="_blank" href="https://nodejs.org/">node</a></li>
+              <li><a target="_blank" href="https://npmjs.com/">npm</a></li>
+              <li>
+                <a target="_blank" href="http://expressjs.com/">express</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://mongoosejs.com/">mongoose</a>
+              </li>
+              <li><a target="_blank" href="//mlab.com">mLab</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-      // Search on enter key event
-      function search(e) {
-        if (e.keyCode == 13) {
-          var val = document.getElementById("search-field").value;
-          window.open("https://swisscows.com/web?query=" + val);
-        }
+  <script>
+    // Search on enter key event
+    function search(e) {
+      if (e.keyCode == 13) {
+        var val = document.getElementById("search-field").value;
+        window.open("https://swisscows.com/web?query=" + val);
       }
+    }
 
-      // Get current time and format
+    // Get current time and format
 
 
-      window.onload = () => {
-        let xhr = new XMLHttpRequest();
-        // Request to open weather map
-        xhr.open(
-          "GET",
-          "http://api.openweathermap.org/data/2.5/weather?id=5746545&units=imperial&appid=e5b292ae2f9dae5f29e11499c2d82ece"
-        );
-        xhr.onload = () => {
-          if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-              let json = JSON.parse(xhr.responseText);
-              console.log(json);
-              document.getElementById("temp").innerHTML =
-                json.main.temp.toFixed(0) + " F";
-              document.getElementById("weather-description").innerHTML =
-                json.name +
-                " - " +
-                json.weather[0].main +
-                " (" +
-                json.weather[0].description +
-                ")";
-            } else {
-              console.log("error msg: " + xhr.status);
-            }
+    window.onload = () => {
+      let xhr = new XMLHttpRequest();
+      // Request to open weather map
+      xhr.open(
+        "GET",
+        "http://api.openweathermap.org/data/2.5/weather?id=5746545&units=imperial&appid=e5b292ae2f9dae5f29e11499c2d82ece"
+      );
+      xhr.onload = () => {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            let json = JSON.parse(xhr.responseText);
+            console.log(json);
+            document.getElementById("temp").innerHTML =
+              json.main.temp.toFixed(0) + " F";
+            document.getElementById("weather-description").innerHTML =
+              json.name +
+              " - " +
+              json.weather[0].main +
+              " (" +
+              json.weather[0].description +
+              ")";
+          } else {
+            console.log("error msg: " + xhr.status);
           }
-        };
-        xhr.send();
-      };
-      document.addEventListener("keydown", event => {
-        if (event.keyCode == 16) {
-          // Spacebar code to open search
-          document.getElementById("search").style.display = "flex";
-          document.getElementById("search-field").focus();
-        } else if (event.keyCode == 27) {
-          // Esc to close search
-          document.getElementById("search-field").value = "";
-          document.getElementById("search-field").blur();
-          document.getElementById("search").style.display = "none";
         }
-      });
-    </script>
-  </body>
+      };
+      xhr.send();
+    };
+    document.addEventListener("keydown", event => {
+      if (event.keyCode == 16) {
+        // Spacebar code to open search
+        document.getElementById("search").style.display = "flex";
+        document.getElementById("search-field").focus();
+      } else if (event.keyCode == 27) {
+        // Esc to close search
+        document.getElementById("search-field").value = "";
+        document.getElementById("search-field").blur();
+        document.getElementById("search").style.display = "none";
+      }
+    });
+  </script>
+</body>
+
 </html>
