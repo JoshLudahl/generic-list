@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-
+const helmet = require('helmet');
 
 //  Parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -13,6 +13,9 @@ const logger = require('./utils/logger');
 
 //  Custom Logging
 app.use(logger);
+
+//  Security
+app.use(helmet());
 
 //  CORS
 app.use((req, res, next) => {
