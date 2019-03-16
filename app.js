@@ -6,7 +6,9 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 
 //  Parse form data
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 
 //  Custom logging
 const logger = require('./utils/logger');
