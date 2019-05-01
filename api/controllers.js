@@ -12,5 +12,8 @@ app.use('/', require('./routes/index'));
 //  Login Controller
 app.use('/list', require('./routes/list'));
 
+//  Testing Controller
+app.use('/test', require('./routes/test'));
+
 //  Export for use
 module.exports = app;
