@@ -13,7 +13,7 @@ app.use('/', require('./routes/index'));
 app.use('/list', require('./routes/list'));
 
 //  Testing Controller
-app.use('/test', require('./routes/test'));
+app.use('/work', require('./routes/work'));
 
 //  Export for use
 module.exports = app;
