@@ -6,13 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="Josh Ludahl" />
-
   <title>Bulga.io - Hi.</title>
-
   <!-- Load Factory CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="/static/styles.css" />
 </head>
@@ -21,7 +18,6 @@
   <div id="search">
     <input id="search-field" type="text" name="search-field" onkeypress="return search(event)" />
   </div>
-
   <div class="flash">Bulga</div>
   <!-- Inspired from https://codepen.io/ohlaph/pen/mobRbP -->
   <section class="hero is-dark is-fullheight">
@@ -154,12 +150,8 @@
               <li><a href="https://learnrubythehardway.org/book/" target="_blank">ruby the hard way</a></li>
               <li><a href="https://kotlinlang.org/docs/reference/" target="_blank">kotlin</a></li>
               <li><a href="https://developer.android.com/" target="_blank">android</a></li>
-
-
             </ul>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -174,12 +166,9 @@
       }
     }
 
-    // Get current time and format
-
-
     window.onload = () => {
       let xhr = new XMLHttpRequest();
-      // Request to open weather map
+
       xhr.open(
         "GET",
         "http://api.openweathermap.org/data/2.5/weather?id=5746545&units=imperial&appid=e5b292ae2f9dae5f29e11499c2d82ece"
@@ -207,7 +196,7 @@
     };
     document.addEventListener("keydown", event => {
       if (event.keyCode == 16) {
-        // Spacebar code to open search
+        // shift to open search
         document.getElementById("search").style.display = "flex";
         document.getElementById("search-field").focus();
       } else if (event.keyCode == 27) {
