@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const http = require('http');
 
@@ -6,11 +5,14 @@ const http = require('http');
 var server = http.createServer(require('./app'));
 
 const host = 'localhost';
-const port = 3000;
+const port = 443;
 
-server.listen({
-  port,
-  host
-}, () => {
-  console.log(`server running at http://${host}:${port}`)
-});
+server.listen(
+  {
+    port,
+    host
+  },
+  () => {
+    console.log(`server running at http://${host}:${port}`);
+  }
+);
