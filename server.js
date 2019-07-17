@@ -12,6 +12,6 @@ server.listen(
     host
   },
   () => {
-    console.log(`server running at http://${host}:${port}`);
+    console.log(`Server running at http://${host}:${port}`);
   }
 );
