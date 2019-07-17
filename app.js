@@ -11,8 +11,7 @@ app.use(
     extended: false
   })
 );
-app.use(goat.foo());
-console.log(apples);
+
 //  Custom logging
 const logger = require('./utils/logger');
 
