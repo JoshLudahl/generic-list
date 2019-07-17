@@ -4,13 +4,14 @@
   "description": "just playing aroud",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon -r esm server.js"
   },
   "author": "Josh Ludahl",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
+    "esm": "^3.2.25",
     "express": "^4.16.4",
     "helmet": "^3.16.0",
     "mongoose": "^5.4.0",
