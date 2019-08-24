@@ -1,136 +1,195 @@
-<!DOCTYPE :html>
-<html>
-  <head>
-    <title>&nbsp; Home</title>
+<!DOCTYPE html>
+<html lang="en">
 
-    <link
-      rel="icon"
-      href="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.newdesignfile.com%2Fpostpic%2F2012%2F05%2Fwebsite-icon_337054.png"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <style>
-      #bg {
-        position: absolute;
-        background-color: #323232;
-        width: 100%;
+  <title>Learning / Work</title>
+
+  <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+    body {
+      background-color: #F5F7FA;
+      margin: 0px;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #clock {
+      font-family: sans-serif;
+      font-size: 3.5rem;
+      font-weight: 600;
+      font-family: "Roboto Mono";
+      color: #fff;
+      margin-bottom: .25em;
+    }
+
+    #search {
+      width: 100%;
+      height: 100vh;
+      background-color: #272727;
+      display: none;
+      position: absolute;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #search-field {
+      width: 90%;
+      padding: .75em 1em;
+      box-sizing: border-box;
+      background-color: #272727;
+      border: solid 0px #272727;
+      font-family: "Roboto Mono";
+      font-size: 4rem;
+      color: #f2f2f2;
+      outline: none;
+      border-radius: 3px;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    .weather-container {
+      width: 30%;
+      background-color: #272727;
+      padding: 1em;
+      border-radius: 3px;
+      font-family: "Roboto Mono";
+      color: #fff;
+      text-align: center;
+    }
+
+    .inline {
+      display: inline-block;
+    }
+
+    .bookmark-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 50%;
+      margin: 1em 0em;
+    }
+
+    @media only screen and (max-width: 960px) {
+      .container {
         height: auto;
-        bottom: 0px;
-        top: 0px;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
 
-      #home {
-        color: white;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* margin-right: 30px; */
-        font-family: monospace;
-        font-size: 24px;
+      #clock {
+        margin-top: 1em;
       }
 
-      .left {
-        color: #73b7d7 !important;
+      .container>.bookmark-container {
+        flex-direction: column;
+        width: 60%;
       }
 
-      #home > * {
-        display: inline-block;
-        margin: 0 0rem;
+      .bookmark-container>.bookmark-set {
+        width: auto;
+        margin: 1em 0em;
       }
+    }
 
-      #home > * > div {
-        padding: 10px;
-      }
+    .bookmark-set {
+      padding: 1em;
+      background-color: #272727;
+      border-radius: 3px;
+      font-family: "Roboto Mono";
+      font-size: .85rem;
+      width: 25%;
+      height: 100%;
+      margin: 0em .5em;
+    }
 
-      #home > .left > div {
-        text-align: right;
-      }
+    .bookmark-inner-container {
 
-      #home > .right > div {
-        text-align: left;
-      }
+      height: 80%;
+      vertical-align: top;
+    }
 
-      a {
-        display: inline;
-        text-decoration: none;
-        color: white;
-        transition: 0.4s;
-      }
+    .bookmark-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 0em 0em .35em 0em;
+    }
 
-      a:active,
-      a:focus {
-        outline: 0;
-      }
+    .bookmark {
+      text-decoration: none;
+      color: #8c8c8b;
+      display: block;
+      margin: .5em 0em;
+    }
 
-      a:hover {
-        color: #ffd740;
-      }
+    .bookmark:hover {
+      color: #fff;
+    }
+  </style>
+</head>
 
-      .slash {
-        display: inline;
-        color: #1787bd;
-      }
-    </style>
-  </head>
+<body>
 
-  <body>
-    <div id="bg">
-      <div id="home">
-        <div class="left">
-          <div>social</div>
-          <div>media</div>
-          <div>mail</div>
-          <div>templates</div>
-          <div>opsys</div>
-          <div>subreddits</div>
-        </div>
-
-        <div class="right">
-          <div class="in">
-            <a href="http://tweetdeck.com">twitter</a>
-            <div class="slash">//</div>
-            <a href="http://reddit.com">reddit</a>
-          </div>
-          <div class="in">
-            <a href="http://youtube.com">youtube</a>
-            <div class="slash">//</div>
-            <a href="http://twitch.tv">twitch</a>
-          </div>
-          <div class="in">
-            <a href="http://gmail.com">gmail</a>
-            <div class="slash">//</div>
-            <a href="http://outlook.com">outlook</a>
-            <div class="slash">//</div>
-            <a href="http://aol.com">aol</a>
-          </div>
-          <div class="in">
-            <a href="https://www.guru99.com/test-case.html" target="_blank"
-              >template case</a
-            >
-            <div class="slash">//</div>
-            <a href="http://plazmaburst2.com">pb2</a>
-          </div>
-          <div class="in">
-            <a href="http://archlinux.org/">arch</a>
-            <div class="slash">//</div>
-            <a href="http://debian.org/">debian</a>
-            <div class="slash">//</div>
-            <a href="http://linux.org">linux</a>
-          </div>
-          <div class="in">
-            <a href="http://reddit.com/r/unixporn/">unixporn</a>
-            <div class="slash">//</div>
-            <a href="http://reddit.com/r/firefoxcss">firefoxcss</a>
-            <div class="slash">//</div>
-            <a href="http://reddit.com/r/i3wm">i3wm</a>
-          </div>
+  <div class="container">
+    <div class="bookmark-container">
+      <div class="bookmark-set">
+        <div class="bookmark-title">CS General</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://libgen.is/" target="_blank">libgen</a>
+          <a class="bookmark" href="https://htdp.org/2019-02-24/" target="_blank">htdp</a>
+          <a class="bookmark" href="http://stroustrup.com/" target="_blank">stroustrup</a>
+          <a class="bookmark" href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md"
+            target="_blank">CPP Guidelines</a>
         </div>
       </div>
+      <div class="bookmark-set">
+        <div class="bookmark-title">Development</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://github.com/jamesshore/tdd-intro/" target="_blank">TDD</a>
+          <a class="bookmark" href="https://en.cppreference.com/" target="_blank">cpp ref</a>
+          <a class="bookmark" href="http://www.cplusplus.com/doc/tutorial/" target="_blank">cpp</a>
+          <a class="bookmark" href="https://testifyqa.com/java-frameworks/" target="_blank">automation</a>
+        </div>
+      </div>
+      <div class="bookmark-set">
+        <div class="bookmark-title">Unix</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://curl.haxx.se/docs/manpage.html" target="_blank">curl</a>
+          <a class="bookmark" href="https://github.com/chubin/awesome-console-services" target="_blank">console</a>
+          <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">/r/unixporn</a>
+
+          <a class="bookmark" href="https://reddit.com/r/news" target="_blank">/r/news</a>
+        </div>
+      </div>
+      <div class="bookmark-set">
+        <div class="bookmark-title">Patterns</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://en.wikipedia.org/wiki/Abstract_factory_pattern" target="_blank">Abstract
+            Factory Patterns</a>
+          <a class="bookmark" href="https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)"
+            target="_blank">wiki:
+            Factory</a>
+          <a class="bookmark" href="http://w3sdesign.com/" target="_blank">w3sdesign</a>
+          <a class="bookmark" href="http://gofpatterns.com" target="_blank">gof</a>
+        </div>
+
+      </div>
     </div>
-  </body>
+  </div>
+  </div>
+</body>
+
 </html>
