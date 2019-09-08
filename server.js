@@ -4,7 +4,7 @@ const http = require('http');
 var server = http.createServer(require('./app'));
 
 const host = 'localhost';
-const port = 443;
+const port = 3000;
 
 server.listen(
   {
