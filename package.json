@@ -14,7 +14,7 @@
     "esm": "^3.2.25",
     "express": "^4.16.4",
     "helmet": "^3.16.0",
-    "mongoose": "^5.4.0",
+    "mongoose": "^5.7.5",
     "node-fetch": "^2.6.0",
     "nodemon": "^1.18.9"
   }
