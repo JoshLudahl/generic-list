@@ -9,13 +9,15 @@
   "author": "Josh Ludahl",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "ejs": "^2.6.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
     "esm": "^3.2.25",
-    "express": "^4.16.4",
-    "helmet": "^3.16.0",
-    "mongoose": "^5.4.0",
-    "node-fetch": "^2.6.0",
-    "nodemon": "^1.18.9"
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.9.16",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
